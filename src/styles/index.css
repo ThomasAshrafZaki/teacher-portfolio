@@ -1,0 +1,112 @@
+/* ==== FILE: src/styles/index.css ==== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* أساسيات الصفحة */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #F8FAFC;
+    line-height: 1.6;
+}
+
+/* الجرادينت الجديدة */
+.gradient-bg {
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #2563EB, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-subtle {
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+}
+
+/* الكروت المعدلة */
+.course-card {
+    perspective: 1000px;
+    transition: all 0.3s ease;
+}
+
+.course-card-inner {
+    transition: transform 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+.course-card:hover .course-card-inner {
+    transform: translateY(-5px) rotateX(5deg);
+}
+
+/* الأزرار الجديدة */
+.btn-primary {
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.btn-outline {
+    border: 2px solid #2563EB;
+    color: #2563EB;
+    background: transparent;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+}
+
+.btn-outline:hover {
+    background: #2563EB;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* الأنيميشنز */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* تأثيرات الظل */
+.shadow-soft {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-medium {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* تحسينات عامة */
+.container-max {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #2563EB, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
