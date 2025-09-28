@@ -11,10 +11,10 @@ export default function Footer() {
                         <div className="flex items-center gap-3 mb-4">
                             <img
                                 src={Logo}
-                                alt="أ. محمد علي"
+                                alt="ا.اسم المدرس"
                                 className="w-10 h-10 rounded-lg object-cover"
                             />
-                            <span className="text-xl font-bold text-white" style={{ fontFamily: 'Cairo' }}>أ. محمد علي</span>
+                            <span className="text-xl font-bold text-white" style={{ fontFamily: 'Cairo' }}> ا. اسم المدرس</span>
                         </div>
                         <p className="text-blue-100 leading-relaxed" style={{ fontFamily: 'Tajawal' }}>
                             مدرس لغة إنجليزية محترف، أساعد الطلاب لتحقيق طموحاتهم الأكاديمية والمهنية
@@ -53,7 +53,7 @@ export default function Footer() {
 
                 <div className="border-t border-blue-300/30 mt-8 pt-8 text-center text-blue-100">
                     <p style={{ fontFamily: 'Tajawal' }}>
-                        © {new Date().getFullYear()} أ. محمد علي. جميع الحقوق محفوظة.
+                        © {new Date().getFullYear()} أ. اسم المدرس . جميع الحقوق محفوظة.
                     </p>
                 </div>
             </div>

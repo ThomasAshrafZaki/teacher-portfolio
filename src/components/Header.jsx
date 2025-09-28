@@ -7,20 +7,18 @@ export default function Header() {
     return (
         <header className="bg-white shadow-medium sticky top-0 z-50 border-b border-border-light">
             <div className="container mx-auto flex justify-between items-center py-4 px-6 container-max">
-                {/* Logo */}
                 <div className="flex items-center gap-3">
                     <img
                         src={Logo}
-                        alt="أ. محمد علي - مدرس لغة إنجليزية"
+                        alt="اسم المدرس - التخصص"
                         className="w-12 h-12 rounded-xl object-cover shadow-medium"
                     />
                     <div>
-                        <span className="text-xl font-bold text-text-strong block" style={{ fontFamily: 'Cairo' }}>أ. محمد علي</span>
-                        <span className="text-sm text-text-muted" style={{ fontFamily: 'Tajawal' }}>مدرس لغة إنجليزية</span>
+                        <span className="text-xl font-bold text-text-strong block" style={{ fontFamily: 'Cairo' }}>اسم المدرس</span>
+                        <span className="text-sm text-text-muted" style={{ fontFamily: 'Tajawal' }}>التخصص</span>
                     </div>
                 </div>
 
-                {/* Navigation */}
                 <nav className="flex gap-8">
                     <NavLink
                         to="/"
@@ -72,7 +70,6 @@ export default function Header() {
                     </NavLink>
                 </nav>
 
-                {/* CTA Button */}
                 <NavLink
                     to="/contact"
                     className="btn-primary hidden lg:flex items-center gap-2"
